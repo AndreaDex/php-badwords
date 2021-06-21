@@ -13,6 +13,9 @@ Amore non muta in poche ore o settimane,
 ma impavido resiste al giorno estremo del giudizio:
 se questo è errore e mi sarà provato,
 io non ho mai scritto, e nessuno ha mai amato.";
+
+var_dump($_GET)
+
 ?>
 
 
@@ -26,6 +29,7 @@ io non ho mai scritto, e nessuno ha mai amato.";
 </head>
 <body>
     
-    <?php echo $sonetto; ?>
+   <p><?php echo $sonetto; ?></p> 
+   <small>Lunghezza del testo:  <?php echo strlen($sonetto)?></small>
 </body>
 </html>
