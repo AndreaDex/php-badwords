@@ -14,8 +14,9 @@ ma impavido resiste al giorno estremo del giudizio:
 se questo è errore e mi sarà provato,
 io non ho mai scritto, e nessuno ha mai amato.";
 
-var_dump($_GET)
+//var_dump($_GET);
 
+$sonettoCensored = str_ireplace($_GET["cens"], "***", $sonetto)
 ?>
 
 
@@ -31,5 +32,10 @@ var_dump($_GET)
     
    <p><?php echo $sonetto; ?></p> 
    <small>Lunghezza del testo:  <?php echo strlen($sonetto)?></small>
+
+   <hr>
+
+   <p><?php echo $sonettoCensored; ?></p>
+   <small>Lunghezza del testo:  <?php echo strlen($sonettoCensored)?></small>
 </body>
 </html>
